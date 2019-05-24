@@ -83,7 +83,7 @@ export class Charts extends React.Component<Props> {
         <HelmetWithTitle titleName={PageTitleText.CHARTS} />
         <ConnectedPageHeader pageTitle={PageTitleText.CHARTS} />
         {(
-          !this.state.isInitialized || !this.isFetched(page) || isNaN(page)
+          !this.isFetched(page) || isNaN(page)
         ) ? (
           <GridBookListSkeleton displayRanking={true} />
         ) : (

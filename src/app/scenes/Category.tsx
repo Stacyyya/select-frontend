@@ -162,7 +162,7 @@ export class Category extends React.Component<Props, State> {
           )}
         </MediaQuery>
         {(
-          !this.state.isInitialized || !isCategoryListFetched || !isValidNumber(categoryId) || !this.isFetched(page)
+          !isCategoryListFetched || !isValidNumber(categoryId) || !this.isFetched(page)
         ) ? (
           <GridBookListSkeleton />
         ) : (

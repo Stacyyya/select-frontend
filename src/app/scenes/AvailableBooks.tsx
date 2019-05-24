@@ -86,7 +86,7 @@ export class AvailableBooks extends React.Component<Props> {
         <HelmetWithTitle titleName={PageTitleText.AVAILABLE_BOOKS} />
         <ConnectedPageHeader pageTitle={PageTitleText.AVAILABLE_BOOKS} />
         {(
-          !this.state.isInitialized || !this.isFetched(page) || isNaN(page)
+          !this.isFetched(page) || isNaN(page)
         ) ? (
           <GridBookListSkeleton />
         ) : (

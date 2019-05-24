@@ -94,7 +94,7 @@ export class Collection extends React.Component<Props> {
         />
         {!!collection && <ConnectedPageHeader pageTitle={collection.title} />}
         {(
-          !this.state.isInitialized || !this.isFetched(page) || isNaN(page)
+          !this.isFetched(page) || isNaN(page)
         ) ? (
           <GridBookListSkeleton />
         ) : (

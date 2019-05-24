@@ -96,19 +96,13 @@ class MySelectHistory extends React.Component<Props, State> {
   }
 
   public componentDidMount() {
-    if (!this.isFetched()) {
-      this.props.dispatchLoadMySelectHistoryRequest(this.props.page);
-    }
+    this.props.dispatchLoadMySelectHistoryRequest(this.props.page);
   }
   public componentDidUpdate(prevProps: Props) {
     if (prevProps.page !== this.props.page) {
       this.setState({ inputs: {} });
       this.props.dispatchLoadMySelectHistoryRequest(this.props.page);
     }
-  }
-  public componentWillUnmount() {
-    const { dispatchResetMySelectHistoryFetchedStatus } = this.props;
-    dispatchResetMySelectHistoryFetchedStatus();
   }
   public renderBooks(books: MySelectBook[]) {
     return (

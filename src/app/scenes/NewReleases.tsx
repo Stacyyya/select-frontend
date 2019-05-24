@@ -91,7 +91,7 @@ export class NewReleases extends React.Component<Props> {
         <HelmetWithTitle titleName={PageTitleText.NEW_RELEASE} />
         <PCPageHeader pageTitle={PageTitleText.NEW_RELEASE} />
         {(
-          !this.state.isInitialized || !this.isFetched(page) || isNaN(page)
+          !this.isFetched(page) || isNaN(page)
         ) ? (
           <GridBookListSkeleton />
         ) : (

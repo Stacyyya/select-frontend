@@ -113,9 +113,7 @@ class MySelect extends React.Component<Props, State> {
     this.initialDispatchTimeout = window.setTimeout(() => {
 
       const { dispatchLoadMySelectRequest, page } = this.props;
-      if (!this.isFetched(page)) {
-        dispatchLoadMySelectRequest(page);
-      }
+      dispatchLoadMySelectRequest(page);
 
       this.initialDispatchTimeout = null;
       this.setState({ isInitialized: true });
@@ -166,13 +164,10 @@ class MySelect extends React.Component<Props, State> {
   }
 
   public componentWillUnmount() {
-    const { page, dispatchResetMySelectPageFetchedStatus } = this.props;
     if (this.initialDispatchTimeout) {
       window.clearTimeout(this.initialDispatchTimeout);
       this.initialDispatchTimeout = null;
-      this.setState({ isInitialized: false });
     }
-    dispatchResetMySelectPageFetchedStatus(page);
   }
 
   public renderBooks(books: MySelectBook[]) {
@@ -242,7 +237,7 @@ class MySelect extends React.Component<Props, State> {
       >
         <HelmetWithTitle titleName={PageTitleText.MY_SELECT} />
         <div className="PageMySelect">
-          {!this.state.isInitialized || !this.isFetched(page) || isNaN(page) ? (
+          {!this.isFetched(page) || isNaN(page) ? (
             <LandscapeBookListSkeleton hasCheckbox={true} />
           ) : (
             <>

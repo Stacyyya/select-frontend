@@ -116,7 +116,7 @@ export class ClosingReservedBooks extends React.Component<Props> {
             {this.renderTermText('nextMonth')}
           </Tab>
         </Tabs>
-        {!isInitialized || !this.isFetched(currentTerm, page) || isNaN(page) ? (
+        {!this.isFetched(currentTerm, page) || isNaN(page) ? (
           <GridBookListSkeleton />
         ) : (
           <>

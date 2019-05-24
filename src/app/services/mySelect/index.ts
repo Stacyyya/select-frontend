@@ -86,7 +86,6 @@ mySelectReducer.on(Actions.loadMySelectRequest, (state, { page }) => produce(sta
   draftState.mySelectBooks.itemListByPage[page] = {
     ...draftState.mySelectBooks.itemListByPage[page],
     fetchStatus: FetchStatusFlag.FETCHING,
-    isFetched: false,
   };
 }));
 
