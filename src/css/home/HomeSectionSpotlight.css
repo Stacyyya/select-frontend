@@ -1,7 +1,7 @@
 :root {
-  --pc-spotlight-section-height: 420px;
-  --inline-120-spotlight-section-height: 326px;
-  --inline-110-spotlight-section-height: 326px;
+  --pc-hotRelease-section-height: 420px;
+  --inline-120-hotRelease-section-height: 386px;
+  --inline-110-hotRelease-section-height: 386px;
 }
 @custom-media --spotlight-slider-view (min-width: 901px);
 @custom-media --spotlight-inline-view (max-width: 900px);
@@ -27,6 +27,8 @@
     padding-bottom: 30px;
   }
   & .InlineHorizontalBookList_Item {
+    width: 140px;
+    
     @media (hover: hover) {
       &:hover {
         & .InlineHorizontalBookList_Title {
@@ -46,11 +48,11 @@
   }
   & .InlineHorizontalBookList_Link {
     flex-direction: column;
-    width: 110px;
+    width: 140px;
   }
   & .InlineHorizontalBookList_Title,
   & .InlineHorizontalBookList_Author {
-    width: 110px;
+    width: 140px;
   }
   & .InlineHorizontalBookList_Author {
     display: block;
