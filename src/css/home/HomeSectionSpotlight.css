@@ -82,6 +82,8 @@
 .HomeSection_Spotlight_Contents {
   position: relative;
   box-sizing: border-box;
+  background: url(../images/top_collection_bg@2x.png) center center no-repeat;
+  background-size: auto 420px;
   @media (--mobile-screen) {
     height: var(--inline-110-spotlight-section-height);
   }
