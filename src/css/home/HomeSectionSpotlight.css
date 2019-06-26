@@ -27,8 +27,6 @@
     padding-bottom: 30px;
   }
   & .InlineHorizontalBookList_Item {
-    width: 140px;
-    
     @media (hover: hover) {
       &:hover {
         & .InlineHorizontalBookList_Title {
@@ -48,11 +46,11 @@
   }
   & .InlineHorizontalBookList_Link {
     flex-direction: column;
-    width: 140px;
+    width: 110px;
   }
   & .InlineHorizontalBookList_Title,
   & .InlineHorizontalBookList_Author {
-    width: 140px;
+    width: 110px;
   }
   & .InlineHorizontalBookList_Author {
     display: block;
