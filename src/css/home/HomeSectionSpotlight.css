@@ -11,9 +11,7 @@
   & .Skeleton {
     background-color: var(--slategray_10);
   }
-  @media (--mobile-screen) {
-    height: var(--inline-140-spotlight-section-height);
-  }
+  
   @media (--spotlight-inline-view) {
     height: var(--inline-140-spotlight-section-height);
   }
@@ -90,9 +88,7 @@
   box-sizing: border-box;
   background: url(../images/top_collection@2x.png) center center no-repeat;
   background-size: auto 420px;
-  @media (--mobile-screen) {
-    height: var(--inline-140-spotlight-section-height);
-  }
+
   @media (--spotlight-inline-view) {
     height: var(--inline-140-spotlight-section-height);
   }
