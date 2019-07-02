@@ -1,8 +1,7 @@
 :root {
-  --pc-hotRelease-section-height: 420px;
-  --inline-120-hotRelease-section-height: 386px;
-  --inline-110-hotRelease-section-height: 386px;
-}
+  --pc-spotlight-section-height: 420px;
+  --inline-140-spotlight-section-height: 380px;
+} 
 @custom-media --spotlight-slider-view (min-width: 901px);
 @custom-media --spotlight-inline-view (max-width: 900px);
 
@@ -13,10 +12,10 @@
     background-color: var(--slategray_10);
   }
   @media (--mobile-screen) {
-    height: var(--inline-110-spotlight-section-height);
+    height: var(--inline-140-spotlight-section-height);
   }
   @media (--spotlight-inline-view) {
-    height: var(--inline-120-spotlight-section-height);
+    height: var(--inline-140-spotlight-section-height);
   }
   @media (--spotlight-slider-view) {
     position: relative;
@@ -27,6 +26,13 @@
     padding-bottom: 30px;
   }
   & .InlineHorizontalBookList_Item {
+    width: 140px;
+    margin-left: 15px;
+
+    &:first-child {
+      margin-left: 0px;
+    }
+
     @media (hover: hover) {
       &:hover {
         & .InlineHorizontalBookList_Title {
@@ -46,11 +52,11 @@
   }
   & .InlineHorizontalBookList_Link {
     flex-direction: column;
-    width: 110px;
+    width: 140px;
   }
   & .InlineHorizontalBookList_Title,
   & .InlineHorizontalBookList_Author {
-    width: 110px;
+    width: 140px;
   }
   & .InlineHorizontalBookList_Author {
     display: block;
@@ -85,10 +91,10 @@
   background: url(../images/top_collection@2x.png) center center no-repeat;
   background-size: auto 420px;
   @media (--mobile-screen) {
-    height: var(--inline-110-spotlight-section-height);
+    height: var(--inline-140-spotlight-section-height);
   }
   @media (--spotlight-inline-view) {
-    height: var(--inline-120-spotlight-section-height);
+    height: var(--inline-140-spotlight-section-height);
   }
   @media (--spotlight-slider-view) {
     box-sizing: border-box;

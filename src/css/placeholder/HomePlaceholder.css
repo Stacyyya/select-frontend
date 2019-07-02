@@ -83,12 +83,11 @@
     padding: 45px 0 0 25px;
     margin: 0 auto;
     overflow: hidden;
-    padding-top: 45px;
   }
   & .HomeSection_Spotlight_Title_Skeleton {
     width: 200px;
     height: 34px;
-    margin: 0 0 34px;
+    margin: 0 0 20px;
     background-color: var(--slategray_10);
   }
   @media (--pc-screen) {
@@ -99,12 +98,12 @@
   @media (--mobile-screen) {
     & .HomeSection_Spotlight_Contents {
       width: 100%;
-      padding-top: 34px;
+      padding-top: 30px;
       overflow: hidden;
     }
     & .HomeSection_Spotlight_Title_Skeleton {
       height: 24px;
-      margin: 0 0 11px;
+      margin: 0 0 12px;
     }
   }
 }
